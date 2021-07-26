@@ -1,0 +1,14 @@
+.OverviewsContainer {
+  display: flex;
+  flex-flow: row;
+  padding-top: 1rem;
+}
+.Icon {
+  padding: 0.3rem;
+}
+.Overview {
+  font-weight: 500;
+}
+.Overview2 {
+  text-transform: uppercase;
+}

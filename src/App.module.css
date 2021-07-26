@@ -1,0 +1,15 @@
+/**
+ * /* .App {
+ *   box-sizing: border-box;
+ *   margin: 0;
+ *   padding: 0;
+ *   display: grid;
+ * }
+ *
+ * @format
+ */
+
+.Home {
+  background-color: lawngreen;
+  border: solid 13px #222;
+}

@@ -1,0 +1,29 @@
+.SlickWrap {
+  width: 60vw;
+  margin: 0 auto;
+}
+.SlickWrap h1,
+h2 {
+  color: var(--clr-green1);
+}
+.SlickWrap .SliderSection {
+  width: 100vw;
+}
+.SlickWrap .Card {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  background-color: var(--clr-green1);
+}
+.SlickWrap button {
+  color: #fff;
+  background: rgb(1, 20, 43);
+  outline: none;
+  border: none;
+}
+
+.SlickWrap button:hover {
+  outline: none;
+  color: #fff;
+  background: var(--clr-green1);
+}

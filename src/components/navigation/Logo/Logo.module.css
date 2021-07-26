@@ -1,0 +1,8 @@
+.Ino {
+  font-weight: bold;
+  cursor: pointer;
+}
+.Ino span {
+  color: #eca400;
+  font-size: 1.2rem;
+}

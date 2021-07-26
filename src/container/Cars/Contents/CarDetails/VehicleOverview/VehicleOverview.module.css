@@ -1,0 +1,16 @@
+.VehicleOverviewContainer {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-flow: column;
+  justify-content: center;
+}
+.Overviews {
+  padding: 1em;
+}
+.VehicleOverview {
+  font-size: 20px;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(141, 141, 141);
+}

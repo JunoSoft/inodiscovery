@@ -1,0 +1,36 @@
+/** @format */
+
+.SectionHeader {
+  padding: 10px 8px;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  color: #555;
+}
+.SectionHeader h1 {
+  color: var(--clr-yellow1);
+  font-size: 1.8rem;
+}
+.SectionHeader p {
+  width: 90%;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.SectionHeader hr {
+  outline: none;
+  width: 35%;
+  height: 1px;
+  background-color: #eee;
+}
+@media (min-width: 850px) {
+  .SectionHeader {
+    width: 80%;
+  }
+  .SectionHeader p {
+    width: 40%;
+  }
+  .SectionHeader hr {
+    width: 15%;
+  }
+}

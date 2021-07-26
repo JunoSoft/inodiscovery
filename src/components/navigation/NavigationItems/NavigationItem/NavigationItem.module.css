@@ -1,0 +1,21 @@
+.NavItem {
+  padding: 0.8rem;
+  border-bottom: solid 3px transparent;
+}
+.NavItem a {
+  text-decoration: none;
+  color: var(--clr-grey);
+  padding: 0.9rem 0.8rem;
+  border-bottom: solid 3px transparent;
+}
+.NavItem a:hover {
+  text-decoration: none;
+  color: var(--clr-yellow2);
+}
+
+.NavItem:active,
+.NavItem .active {
+  border-bottom: solid 3px #eca400;
+  cursor: pointer;
+  color: #eca400;
+}

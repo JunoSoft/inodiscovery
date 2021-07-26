@@ -1,0 +1,64 @@
+.ReservationPage {
+  box-sizing: border-box;
+  height: 100%;
+}
+.ReservationPage img {
+  width: 100%;
+  height: 120vh;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.ReservationPlace {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(4, 5, 19, 0.4);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.ReservationPlace form {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+form .frmBtn {
+  box-sizing: border-box;
+  grid-column: 1;
+  padding: 0 10px;
+}
+
+.Restitle {
+  border-bottom: solid 1px #777;
+}
+.Restitle p,
+h2 {
+  color: #fff;
+  padding-bottom: 10px;
+}
+@media (min-width: 500px) {
+  .ReservationPlace {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .ReservationPlace form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form .frmBtn {
+    grid-column: 1/3;
+  }
+  .ReservationPage img {
+    height: 100vh;
+  }
+}
+@media (min-width: 600px) {
+  .ReservationPlace {
+    width: 60%;
+  }
+}

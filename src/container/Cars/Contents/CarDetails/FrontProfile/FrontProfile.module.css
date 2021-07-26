@@ -1,0 +1,24 @@
+/** @format */
+
+.ProfileImage {
+  /* position: relative; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0 1rem;
+}
+.ProfileTitle {
+  position: absolute;
+  top: 20px;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: rgb(43, 43, 43);
+  left: 0;
+}
+
+.ProfileSubTitle {
+  padding: 1rem 2rem;
+  color: black;
+  left: 0;
+}

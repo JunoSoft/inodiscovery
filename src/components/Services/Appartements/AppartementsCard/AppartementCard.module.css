@@ -1,0 +1,90 @@
+.Card {
+  box-sizing: border-box;
+  box-shadow: 1px 3px 3px 2px rgba(30, 36, 44, 0.333);
+  min-height: 330px;
+  width: 95%;
+  margin: 15px auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.Card:hover{
+  margin-top: -3px;
+  transition: 0.5s ease-in;
+  box-shadow: 1px 2px 2px  rgba(233, 130, 12, 0.842);
+}
+.Card h3 {
+  font-size: 1.1rem;
+  text-align: right;
+  padding-right: 10px;
+  padding-top:15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.Card .Cost {
+  font-size: 0.9rem;
+  box-shadow: 1px 3px 4px 0px #555;
+  opacity: 0.8;
+  padding: 8px 11px;
+  padding-right: 18px;
+  text-align: center;
+  border-top-left-radius: 20px;
+  line-height: 1.2;
+  text-align: right;
+  font-weight: bold;
+  color: var(--clr-yellow1);
+  width: 80%;
+  margin-left: 43px;
+}
+.Card .CardImageHolder {
+  box-sizing: border-box;
+  background-color: rgb(172, 173, 165);
+  height: 45%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+}
+.Card .CardImageHolder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  border-bottom-left-radius: 30px;
+}
+.CardContent {
+  box-sizing: border-box;
+  padding: 5px 5px;
+  background-color: #fff;
+  height: 55%;
+  color: #27476e;
+  font-family: "roboto", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  text-align: right;
+}
+.CardContent {
+  color: var(--clr-green1);
+}
+.Location {
+  font-family: monospace;
+  color: var(--clr-green1);
+  font-size: 0.9rem;
+  padding: 0 8px;
+}
+.CardContent i {
+  padding-top: 20px;
+  padding-right: 3px;
+  font-size: 1.1rem;
+}
+.Mission a {
+  padding: 5px 10px;
+  color: #27476e;
+  border: solid 1px #27476e;
+  text-decoration: none;
+}
+@media (min-width: 499px) {
+  .Card {
+    width: 95%;
+  }
+}

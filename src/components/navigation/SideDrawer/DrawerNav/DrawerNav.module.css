@@ -1,0 +1,13 @@
+.DrawerNav {
+  border-bottom: solid 1px var(--clr-grey);
+  padding: 8px 2px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.DrawerNav:hover {
+  color: var(--clr-yellow1);
+  border-bottom: solid 1px var(--clr-yellow1);
+}
+.DrawerNav i {
+  margin-right: 15px;
+}

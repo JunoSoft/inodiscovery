@@ -1,0 +1,27 @@
+.SelectedCarType {
+  display: flex;
+  flex-flow: column;
+  gap: 1.3rem;
+  margin-bottom: 30px;
+}
+.ImageContainer {
+  width: 100%;
+  height: 427px;
+}
+.ImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.FeatherBanner {
+  position: relative;
+  top: -120px;
+  background-image: linear-gradient(180deg, transparent, rgba(255, 255, 255));
+  height: 7.4rem;
+}
+.Car_MainTypeTitle {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 2rem;
+}

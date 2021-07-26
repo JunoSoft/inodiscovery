@@ -1,0 +1,113 @@
+.ContactUs {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
+.ContactUs h1{
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+.ContactBox {
+  box-sizing: border-box;
+  width: 80%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: -150px;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.InfoContact > h3 {
+  color: #002209e6;
+}
+.InfoContact > p {
+  color: #002209e6;
+  text-align: left;
+  padding: 15px 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.InfoContact > p i {
+  padding-right: 10px;
+  color: var(--clr-yellow2);
+}
+.InfoContact > p {
+  color: #aaa;
+}
+.ContactBox button {
+  border: solid 1px var(--clr-green1);
+  color: var(--clr-green1);
+  margin-bottom: 10px;
+}
+.TopContact {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
+  color: #fff;
+  padding: 0 20px;
+  min-height: 350px;
+}
+.TopContact img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+.TopContact p {
+  color: var(--clr-grey);
+}
+
+.InfoContact {
+  background-color: #111;
+  height: 100%;
+}
+.InfoContact h3 {
+  color: var(--clr-yellow1);
+}
+.InfoContact .SocialMedias{
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+ margin-left: 40px;
+
+}
+.InfoContact .SocialMedias i{
+  color:var(--clr-grey);
+  padding: 0 15px;
+  cursor:pointer
+}
+.MessagingContact {
+  width: 100%;
+}
+.MessagingContact h3 {
+  color: var(--clr-green1);
+}
+@media (min-width: 500px) {
+  .ContactBox {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+}
+@media (min-width: 750px) {
+  .ContactBox {
+    width: 80%;
+    grid-template-columns: 1fr 40%;
+  }
+}
+@media (min-width: 1020px) {
+  .ContactBox {
+    width: 60%;
+  }
+}

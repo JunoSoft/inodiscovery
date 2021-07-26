@@ -1,0 +1,190 @@
+/** @format */
+
+.HomeSections {
+  width: 100%;
+  box-sizing: border-box;
+}
+.MenuSlideWrapper {
+  box-sizing: border-box;
+  max-height: 130px;
+  border: solid 1px #dddddd;
+  background-color: burlywood;
+  display: block;
+  overflow-x: scroll;
+  width: 100%;
+}
+.ModalContent {
+  width: 100%;
+}
+.ModalContent img {
+  width: 100%;
+  padding: 20px 10px;
+}
+.ModalContent p {
+  padding: 30px 10px;
+}
+.MenuSlideWrapper .Item {
+  box-sizing: border-box;
+  margin-left: 3px;
+  width: 300px;
+  height: 100%;
+  line-height: 110px;
+  text-align: center;
+  background-color: #fff;
+  display: inline-block;
+}
+.SliderHolder {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+  height: 300px;
+}
+.SliderHolder .SliderCover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.SliderHolder .Caption {
+  position: absolute;
+  top: -75px;
+  color: #fff;
+  text-align: center;
+  width: 75%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.AdvertButton {
+  margin-top: 20px;
+  background-color: transparent;
+  padding: 4px 20px;
+  color: rgb(255, 174, 24);
+}
+.ContentBody {
+  position: relative;
+  margin-top: 500px;
+}
+.LeftAdverts {
+  position: absolute;
+  left: 25px;
+  top: 100vh;
+  height: 600px;
+  width: 15%;
+  z-index: 99;
+  display: none;
+  box-sizing: border-box;
+}
+.RightAdverts {
+  box-sizing: border-box;
+  position: absolute;
+  right: 25px;
+  top: 100vh;
+  height: 600px;
+  width: 15%;
+  z-index: 99;
+  display: none;
+}
+.LeftAdverts img {
+  margin-bottom: 30px;
+}
+.RightAdverts img {
+  margin-bottom: 30px;
+}
+.HorizontalAdvert {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: block;
+}
+.HorizontalAdvert img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.PartnerWrapper {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(250, 247, 218);
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 25px 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.PartnerWrapper img {
+  box-sizing: border-box;
+  height: 120px;
+  padding: 5px 10px;
+  margin: auto;
+  cursor: pointer;
+}
+.PartnerWrapper h2 {
+  color: rgb(41, 121, 76);
+}
+
+@media (min-width: 499px) {
+  .ContentBody {
+    margin-top: 350px;
+  }
+  .SliderHolder {
+    height: 500px;
+  }
+  .SliderHolder .Caption {
+    top: -50px;
+  }
+}
+@media (min-width: 667px) {
+  .ContentBody {
+    margin-top: 400px;
+  }
+  .PartnerWrapper {
+    padding: 30px 80px;
+  }
+  .SliderHolder {
+    height: 500px;
+  }
+  .SliderHolder .Caption {
+    top: 0;
+  }
+}
+@media (min-width: 850px) {
+  .ContentBody {
+    margin-top: 380px;
+  }
+  .SliderHolder {
+    height: 500px;
+  }
+  .SliderHolder .Caption {
+    width: 40%;
+  }
+}
+@media (min-width: 950px) {
+  .HorizontalAdvert {
+    display: none;
+  }
+  .RightAdverts {
+    display: block;
+    top: 120vh;
+  }
+  .LeftAdverts {
+    display: block;
+    top: 120vh;
+  }
+}
+@media (min-width: 1020px) {
+  .ContentBody {
+    margin-top: 250px;
+  }
+}
+@media (min-width: 1370px) {
+   .ContentBody {
+    margin-top: 350px;
+  }
+}

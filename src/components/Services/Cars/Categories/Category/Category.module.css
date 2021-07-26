@@ -1,0 +1,32 @@
+.Categorie_Card {
+  margin: 0 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  cursor: pointer;
+}
+.CarPhoto {
+  height: 80px;
+  width: 120px;
+  margin: 0;
+  transform: translateY(2rem);
+}
+.Content_Card {
+  background: linear-gradient(#ff8500, #683600);
+  height: 120px;
+  width: 160px;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+}
+.Categorie_Card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Content_Container {
+  padding-top: 2.3rem;
+}
+.Content_Container p:first-of-type {
+  font-weight: bold;
+}

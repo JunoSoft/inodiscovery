@@ -1,0 +1,19 @@
+/** @format */
+
+.Deals {
+  width: 80%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 0 auto;
+}
+
+@media (max-width: 499px) {
+  .Deals {
+    width: 90%;
+  }
+}
+.dealsp {
+  font-weight: bold;
+  padding: 0.5em;
+}

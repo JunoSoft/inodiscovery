@@ -1,0 +1,47 @@
+/** @format */
+
+.Deal {
+  flex: 1 1 100%;
+  border: 1px solid rgb(153, 153, 153);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.DealPrice {
+  text-align: end;
+}
+.DealContents {
+  padding: 0.5rem;
+}
+.DealContents div:first-child {
+  text-align: center;
+  padding: 0.4rem;
+  color: white;
+  margin: 0 auto;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #e59033;
+  width: 40%;
+}
+.DealContent {
+  padding: 0.5rem;
+}
+.DealContent p:first-child {
+  padding-bottom: 0.5rem;
+}
+.DealContent p:last-child {
+  padding-bottom: 0.5rem;
+}
+.MoreDealsDetails {
+  padding-bottom: 0.5rem;
+}
+.DealPhoto {
+  height: 200px;
+}
+.DealPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

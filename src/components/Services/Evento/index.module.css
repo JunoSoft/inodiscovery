@@ -1,0 +1,119 @@
+/** @format */
+
+.Close {
+  position: fixed;
+  right: -20px;
+  top: -20px;
+  background-color: red;
+  color: #fff;
+  z-index: 999;
+  padding: 10px 8px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.PosterInfo h2 {
+  padding-top: 0px;
+  margin-top: 0px;
+  color: var(--clr-blue1);
+  text-transform: uppercase;
+}
+.PosterInfo h3 {
+  color: var(--clr-blue2);
+}
+.PosterInfo a {
+  margin-top: 10px;
+  color: rgb(10, 10, 194);
+}
+.PosterInfo p {
+  padding-top: 10px;
+}
+.Events {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
+.Bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.EventsHolder {
+  box-sizing: border-box;
+  width: 95%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: -150px;
+  background-color: var(--clr-grey);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 10px;
+  z-index: 3;
+}
+
+.TopEvents {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
+  color: #fff;
+  padding: 0 20px;
+  z-index: 2;
+}
+.TopEvents p {
+  color: var(--clr-yellow2);
+}
+.EventModalContent {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  height: auto;
+  width: 100%;
+}
+.EventModalContent .PosterHolder {
+  background-color: #ff9f00;
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+.EventModalContent .PosterHolder img {
+  width: 100%;
+}
+.EventModalContent .PosterInfo {
+  padding: 24px 10px;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .EventModalContent {
+    flex-flow: row;
+  }
+  .EventsHolder {
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+  }
+  .EventModalContent .PosterHolder {
+    width: 55%;
+  }
+  .EventModalContent .PosterInfo {
+    width: 45%;
+  }
+}
+@media (min-width: 850px) {
+  .EventsHolder {
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+  }
+}
+@media (min-width: 1020px) {
+  .EventsHolder {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,64 @@
+.OwnerPage {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.CompanyHeader {
+  box-sizing: border-box;
+  background-color: var(--clr-blue1);
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 180px;
+  color: #fff;
+  padding-top: 60px;
+}
+.CompanyHeader h2 {
+  color: #fff;
+}
+.CompanyHeader .ProfilePic {
+  box-sizing: border-box;
+  width: 110px;
+  height: 110px;
+  border: solid 5px #fff;
+  position: absolute;
+  top: 125px;
+  left: 20px;
+  border-radius: 50%;
+}
+.CompanyHeader .ProfilePic img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.PageContent {
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  min-height: 400px;
+  margin-top: 180px;
+  padding-top: 0;
+  box-shadow: none;
+}
+.CompanyName p {
+  color: var(--clr-grey);
+}
+
+@media (min-width: 500px) {
+  .PageContent {
+    width: 60%;
+    margin: auto;
+    min-height: 400px;
+    margin-top: 180px;
+    padding-top: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+}
+@media (min-width: 750px) {
+}

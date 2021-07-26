@@ -1,0 +1,21 @@
+/** @format */
+
+.LogContainer {
+  width: 400px;
+  padding: 10px;
+  margin: 5rem auto;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 6px 2px rgb(90, 171, 224);
+}
+.LoginButton {
+  padding: 10px 2rem;
+  border: 1px solid #0066ff;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #0066ff;
+  outline: none;
+}
+.LoginButton:hover {
+  background-color: transparent;
+  color: #0066ff;
+}

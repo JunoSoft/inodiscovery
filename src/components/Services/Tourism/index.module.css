@@ -1,0 +1,56 @@
+.Tourism {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
+.Bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 400px;
+  background-color: rgba(7, 12, 19, 0.7);
+  z-index: 1;
+}
+.TourismHolder {
+  box-sizing: border-box;
+  width: 95%;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: -150px;
+  background-color: var(--clr-grey);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 10px;
+  z-index: 3;
+}
+
+.TopTourism {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 100%;
+  color: #fff;
+  padding: 0 20px;
+  z-index: 2;
+}
+.TopTourism p {
+  color: var(--clr-yellow2);
+}
+
+@media (min-width: 600px) {
+  .TourismHolder {
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+  }
+}
+@media (min-width: 850px) {
+  .TourismHolder {
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+  }
+}

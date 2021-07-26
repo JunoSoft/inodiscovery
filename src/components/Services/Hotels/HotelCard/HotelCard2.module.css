@@ -1,0 +1,91 @@
+/** @format */
+
+.HotelCard {
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(5, 95, 199, 0.4);
+
+  min-height: 320px;
+  width: 95%;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.HotelCard:hover{
+  box-shadow: 0px 2px 3px 2px rgba(5, 95, 199, 0.4);
+transition: .2s;
+}
+
+.ReadMore {
+  border: solid 1px rgba(5, 95, 199, 0.7);
+  padding: 5px 5px;
+  width: 60%;
+  margin: auto auto;
+  margin-top: 20px;
+}
+.HotelCard a {
+  text-decoration: none;
+}
+.HotelCard .CardImageHolder {
+  background-color: rgb(172, 173, 165);
+  height: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+.HotelCard .CardImageHolder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.CardContent {
+  padding: 5px 16px;
+  background-color: #fff;
+  height: 55%;
+  color: #27476e;
+  font-family: "roboto", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.CardContent h3 {
+  font-size: 1.2rem;
+}
+.Stricked {
+  color: #a81043;
+  font-size: 0.9rem;
+  margin-top: -12px;
+}
+.HotelCard .Cost {
+  background-color: var(--clr-yellow1);
+  position: absolute;
+  bottom: 155px;
+  padding: 5px 8px;
+  right: -5px;
+  font-size: 0.8rem;
+  color: #fff;
+  transform: skewX(-10deg);
+}
+.CardContent i {
+  padding: 0 3px;
+  color: #eca400;
+}
+.CardContent .StarsConatiner {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+.Location {
+  color: #27476e;
+  font-weight: 10px;
+  letter-spacing: 1.5px;
+  font-size: 0.7rem;
+}
+.HotelCard h3 {
+  padding: 0;
+}
+
+@media (min-width: 499px) {
+  .HotelCard {
+    width: 95%;
+  }
+}

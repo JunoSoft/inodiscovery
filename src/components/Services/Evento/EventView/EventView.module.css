@@ -1,0 +1,117 @@
+.Bg {
+  background: linear-gradient(45deg, var(--clr-yellow1), var(--clr-yellow2));
+  height: 70vh;
+}
+.EventViewWrap {
+  position: relative;
+  box-sizing: border-box;
+}
+.EventInfoSection {
+  box-sizing: border-box;
+  z-index: 2;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #fff;
+  min-height: 70vh;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.EventInfoSection .ImageHold {
+  box-sizing: border-box;
+  width: 100%;
+  grid-column: 1/3;
+}
+.EventInfoSection .ImageHold img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+}
+.EventInfoSection .InfoHold {
+  box-sizing: border-box;
+  background-color: rgba(241, 237, 237, 0.2);
+  width: 100%;
+  padding: 10px;
+}
+
+.InfoHold .Location {
+  margin: 35px auto;
+}
+.InfoHold .Date p {
+  color: var(--clr-blue2);
+}
+.Left .Apply {
+  padding: 20px 0;
+}
+.Left .Apply a {
+  color: rgb(15, 5, 158);
+}
+.InfoHold .Location p {
+  color: var(--clr-blue2);
+}
+.AboutSection {
+  box-sizing: border-box;
+  width: 100%;
+  grid-column: 1/3;
+  padding: 15px 20px;
+}
+.AboutSection .Left {
+  box-sizing: border-box;
+  width: 100%;
+}
+.AboutSection .Right {
+  width: 100%;
+}
+.AboutSection h2 {
+  color: #000;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+.EventViewWrap .EventsRecommend {
+  width: 100%;
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 499px) {
+  .EventViewWrap .EventsRecommend {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 560px) {
+  .EventInfoSection {
+    grid-template-columns: 1fr 40%;
+  }
+  .EventInfoSection .ImageHold {
+    grid-column: 1/2;
+  }
+  .EventViewWrap .EventsRecommend {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 750px) {
+  .EventInfoSection {
+    grid-template-columns: 1fr 40%;
+    width: 70%;
+  }
+  .AboutSection .Left {
+    width: 90%;
+  }
+  .EventViewWrap .EventsRecommend {
+    grid-template-columns: repeat(1fr, 3);
+  }
+}
+@media (min-width: 950px) {
+  .EventViewWrap .EventsRecommend {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1020px) {
+  .EventViewWrap .EventsRecommend {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

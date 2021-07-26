@@ -1,0 +1,76 @@
+.TripCard {
+  background: radial-gradient(#000, var(--clr-green1));
+  box-sizing: border-box;
+  box-shadow: 0 2px 3px rgba(39, 71, 110, 0.6);
+  min-height: 300px;
+  width: 95%;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+
+}
+.TripCard:hover{
+  transform: rotateZ(-8deg);
+  transition: .4s ease-in;
+  z-index: 999;
+  border: solid 2px #fff;
+}
+.TripCard .CardImageHolder {
+  opacity: 0.3;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.CardContent p {
+  padding-top: 15px;
+}
+.CardContent span {
+  letter-spacing: 1px;
+  color: var(--clr-yellow2);
+}
+.TripCard h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-bottom: solid 1px rgba(255, 253, 253, 0.5);
+}
+.TripCard .CardImageHolder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.CardContent {
+  cursor: pointer;
+  padding: 5px 16px;
+  height: 55%;
+  width: 100%;
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  z-index: 9;
+  position: absolute;
+  bottom: 25px;
+}
+
+.Mission {
+  color: #eee;
+  letter-spacing: 1px;
+  font-family: cursive;
+  letter-spacing: 1px;
+  padding-top: 8px;
+}
+.Mission a {
+  padding: 5px 10px;
+  color: #efefef;
+  background-color: #27476e;
+  text-decoration: none;
+}
+@media (min-width: 499px) {
+  .TripCard {
+    width: 95%;
+  }
+}

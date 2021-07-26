@@ -1,0 +1,66 @@
+/** @format */
+
+.Card {
+  box-sizing: border-box;
+  box-shadow: 0 2px 3px rgba(39, 71, 110, 0.6);
+  height: 310px;
+  width: 310px;
+  margin: 15px auto;
+  position: relative;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+  background-color: #abaeb613;
+}
+.Card .CardImageHolder {
+  height: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.Card .CardImageHolder img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+.Card .CardImageHolder img:hover {
+  width: 110%;
+  transition: 0.2s ease-in;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.EventName {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(3, 1, 12, 0.8);
+  z-index: 1;
+  color: #efefef;
+  text-align: center;
+  padding: 7px 5px;
+  font-size: 0.8rem;
+}
+.EventName span {
+  width: 100%;
+  padding: 0 0.4em;
+}
+.Date {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  padding: 7px 4px;
+  font-size: 1rem;
+}
+
+@media (min-width: 499px) {
+  .Card {
+    width: 95%;
+  }
+}

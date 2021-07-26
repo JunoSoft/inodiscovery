@@ -1,0 +1,418 @@
+/** @format */
+
+.BgHeader {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: linear-gradient(var(--clr-blue1) 35%, #fff);
+  z-index: -5;
+}
+.BgHeader img {
+  z-index: -5;
+  object-fit: cover;
+  width: 100%;
+}
+.RecommendationTitle {
+  box-sizing: border-box;
+  padding-left: 20px;
+  margin: 50px auto;
+  color: var(--clr-yellow1);
+  width: 100%;
+  text-align: center;
+}
+.GarellyTitle {
+  box-sizing: border-box;
+  padding-left: 0;
+  width: 100%;
+  color: var(--clr-yellow1);
+  text-align: center;
+  margin: 20px auto;
+}
+.Description {
+  width: 100%;
+  margin: 0 auto;
+}
+.Description .DescriptionRow {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0px 1px 4px 1px rgba(150, 150, 150, 0.2);
+  padding: 15px 20px;
+}
+.hotelTtitle {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+  color: var(--clr-blue1);
+  text-transform: uppercase;
+}
+.HotelShow {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  margin: 0 20px;
+  margin-top: 15px;
+  max-width: auto;
+}
+.Hotels {
+  box-sizing: border-box;
+  display: grid;
+  margin: 10px 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.HotelShow .HotelSlider {
+  box-sizing: border-box;
+  width: 100%;
+  height: 16rem;
+  text-align: center;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.HotelShow .HotelSlider img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-sizing: border-box;
+}
+.HotelSlider p {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.HotelSlider .MyP {
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+  top: -55px;
+  width: 100%;
+  text-align: center;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.HotelShow .HotelPhotosLine {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  margin: 10px auto;
+  margin-bottom: 38px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px 5px;
+  padding: 5px;
+}
+.HotelViews {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.HotelViews .HotelPresent {
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0;
+  padding-right: 0;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+.HotelPresent .SpecialOffers {
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  background-color: var(--clr-blue1); /*rgb(2, 99, 209)*/
+  text-align: center;
+  font-size: 0.8rem;
+}
+.HotelPresent .SpecialOffers h3 {
+  text-transform: uppercase;
+}
+.HotelPresent .MapShow,
+.HotelPresent .MapShowMini {
+  box-sizing: border-box;
+  height: 45%;
+  padding: 15px 0;
+  display: none;
+}
+.HotelPresent .MapShowMini {
+  display: block;
+  height: 200px;
+}
+.BookButtonMini a{
+  text-decoration: none;
+}
+.BookButton a{text-decoration: none;}
+.HotelPresent .BookButton,
+.BookButtonMini {
+  height: 15%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  cursor: pointer;
+  border: solid 1px #a81043;
+  color: #a81043;
+  background-color: #fff;
+  transition: all 0.7s;
+  box-sizing: border-box;
+}
+.HotelPresent .BookButton:hover,
+.BookButtonMini:hover {
+  background-color: #a81043;
+  border: solid 1px transparent;
+  color: #fff;
+}
+.BookButton i,
+.BookButtonMini i {
+  transition: 0.3s;
+  padding-left: 20px;
+  margin-top: -3px;
+}
+.BookButton i:after,
+.BookButtonMini i:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+.BookButtonMini {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+.HotelPresent .BookButton {
+  display: none;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.HotelShow .HotelPhotosLine {
+  display: none;
+}
+.HotelViews .HotelPhotosLine {
+  display: grid;
+}
+.HotelShow .HotelPhotosLine div {
+  cursor: pointer;
+}
+.HotelShow .HotelPhotosLine div > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+.HotelShow .HotelPhotosLine div > img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.HotelPhotosLine .Costs {
+  position: relative;
+  border-radius: 0;
+}
+.Costs .ServiceCost {
+  position: absolute;
+  padding: 3px 4px;
+  right: 0;
+  top: 60px;
+  background-color: var(--clr-yellow1);
+  color: #fff;
+  font-size: 0.8rem;
+  border-top-left-radius: 8px;
+}
+.Costs .ServiceName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 2px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.HotelShow .HotelDetails {
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.HotelDetails img {
+  box-sizing: border-box;
+}
+.HotelShow .HotelDetails h2 {
+  margin-top: 0;
+}
+.Offers {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.Offers > div {
+  border: 1px solid white;
+}
+.Description .DescriptionRow h3 {
+  text-transform: uppercase;
+  color: var(--clr-blue1);
+  padding-bottom: 10px;
+}
+@media (max-width: 449px) {
+  .Hotels {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 450px) {
+  .HotelShow .HotelPhotosLine {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 500px) {
+  .HotelShow .HotelPhotosLine {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .HotelPresent .MapShowMini,
+  .BookButtonMini {
+    display: none;
+  }
+  .HotelPresent .MapShow {
+    display: block;
+  }
+  .HotelPresent .BookButton {
+    display: flex;
+  }
+  .hotelTtitle {
+    text-align: left;
+    width: 90%;
+    padding: 0 20px;
+  }
+  .Description .DescriptionRow {
+    padding: 5px 20px;
+  }
+  .Description .DescriptionRow h3 {
+    text-transform: uppercase;
+    color: var(--clr-blue1);
+    padding-bottom: 20px;
+  }
+  .HotelShow .HotelPhotosLine {
+    display: grid;
+    width: 100%;
+    height: 100px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 20px;
+  }
+  .HotelViews .HotelPhotosLine {
+    display: none;
+  }
+  .Hotels {
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .HotelViews {
+    flex-flow: row;
+  }
+  .HotelShow .HotelSlider {
+    height: 22rem;
+    width: 60%;
+  }
+  .HotelViews .HotelPresent {
+    /* height: 22rem; */
+    width: 40%;
+    display: flex;
+    padding-left: 5px;
+  }
+}
+@media (min-width: 750px) {
+  .HotelViews .HotelPresent {
+    padding: 0 5px;
+  }
+
+  .Hotels {
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .HotelShow .HotelPhotosLine {
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .HotelShow .HotelDetails {
+    width: 100%;
+  }
+}
+@media (min-width: 850px) {
+  .HotelShow {
+    grid-template-columns: 1fr 40%;
+  }
+  .Hotels {
+    box-sizing: border-box;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .Description .DescriptionRow {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .HotelViews .HotelPresent {
+    padding-left: 20px;
+  }
+  .HotelShow .HotelPhotosLine {
+    width: 100%;
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media (min-width: 1020px) {
+  .HotelShow .HotelPhotosLine {
+    grid-template-columns: repeat(8, 1fr);
+    width: 90%;
+  }
+
+  .Hotels {
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .HotelShow .HotelSlider {
+    width: 55%;
+  }
+  .HotelViews .HotelPresent {
+    width: 35%;
+  }
+  .HotelShow {
+    max-width: 1370px;
+  }
+  .HotelShow .HotelDetails {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .RecommendationTitle {
+    padding-left: 5%;
+  }
+  .GarellyTitle {
+    padding-left: 5%;
+  }
+  .Description {
+    width: 90%;
+  }
+}

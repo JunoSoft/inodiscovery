@@ -1,0 +1,53 @@
+/** @format */
+
+.FooterWrap {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 48px;
+  background-color: var(--clr-blue2);
+  color: #efefef;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.AdvertBtn {
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  border: solid 1px rgba(246, 210, 6, 0.5);
+}
+.AdvertBtn:hover {
+  border: solid 1px rgba(255, 171, 14, 0.5);
+  color: #eca400;
+}
+.FooterWrap ul li {
+  list-style: none;
+}
+.FooterWrap > div {
+  padding: 0 30px;
+}
+.FooterWrap > div:first-child {
+  border-right: solid 1px #999;
+}
+.FooterWrap span {
+  color: #eca400;
+  font-size: 1.2rem;
+}
+
+.SocialMedias ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+.SocialMedias ul li {
+  padding-right: 0.8rem;
+  text-align: left;
+}
+@media (min-width: 750px) {
+  .FooterWrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}

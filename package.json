@@ -1,0 +1,61 @@
+{
+  "name": "react-basic-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.6.0",
+    "font-awesome": "^4.7.0",
+    "html-react-parser": "^1.2.6",
+    "lodash": "^4.17.20",
+    "re-carousel": "^2.4.0",
+    "react": "^16.13.1",
+    "react-alice-carousel": "^2.2.1",
+    "react-animated-slider": "^2.0.0",
+    "react-awesome-slider": "^4.1.0",
+    "react-back-to-top-button": "0.0.14",
+    "react-bootstrap": "^1.6.1",
+    "react-currency-format": "^1.0.0",
+    "react-datepicker": "^3.3.0",
+    "react-dom": "^16.13.1",
+    "react-grid-gallery": "^0.5.5",
+    "react-horizontal-scrolling-menu": "^0.7.8",
+    "react-icons": "^3.11.0",
+    "react-image-magnifiers": "^1.4.0",
+    "react-page-scroller": "^2.0.11-beta",
+    "react-responsive-carousel": "^3.2.11",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-scroll-horizontal": "^1.6.6",
+    "react-slick": "^0.27.14",
+    "redux": "^4.0.5",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

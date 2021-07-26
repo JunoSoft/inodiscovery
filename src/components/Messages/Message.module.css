@@ -1,0 +1,30 @@
+/** @format */
+
+.ContactData {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.ContactUsHeader {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #004e64;
+  border-bottom: 2px solid #004e64;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .ContactData {
+    width: 500px;
+  }
+}

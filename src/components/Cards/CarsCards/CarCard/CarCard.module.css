@@ -1,0 +1,102 @@
+.CarCard {
+  box-sizing: border-box;
+  border: rgba(236, 232, 232, 0.7);
+  height: 300px;
+  width: 95%;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+}
+.CarCard:hover {
+  transition: 0.5s ease-in;
+  transform: rotateZ(-7deg);
+  z-index: 99;
+  background-color: var(--clr-green1);
+  border: solid 2px #fff;
+  margin-top: 0px;
+}
+.CarCard .CardImageHolder {
+  background-color: rgb(172, 173, 165);
+  height: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+.CarCard .Hidex {
+  background: #fff;
+  height: 20px;
+  width: 80px;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  right: -35px;
+}
+.CarCard h3 {
+  font-size: 1rem;
+}
+.CarCard .CardImageHolder img {
+  height: 100%;
+  width: 90%;
+  object-fit: cover;
+}
+.CardContent {
+  text-align: center;
+  padding: 15px 5px;
+  background-color: var(--clr-green1);
+  color: #fff;
+  font-family: "roboto", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  height: 150px;
+}
+
+.CardContent i {
+  padding: 3px;
+  color: #eca400;
+  text-align: center;
+}
+.CarCard .Description {
+  letter-spacing: 1px;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 5px;
+  margin-top: 4px;
+}
+.Mission {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+.Location {
+  padding-top: 10px;
+  color: #fdbc24;
+}
+.Recommend {
+  text-align: center;
+  background-color: rgba(253, 253, 253, 0.7);
+  color: #333;
+  width: 200px;
+  font-size: 0.9rem;
+  position: absolute;
+  padding: 8px;
+  top: 10px;
+  font-weight: bold;
+  right: -75px;
+  transform: rotate(45deg);
+}
+.CostHold {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.966);
+  color: #df7400;
+  width: 70%;
+  font-size: 0.8rem;
+  position: absolute;
+  padding: 5px 10px;
+  top: 35%;
+  right: 5px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transform: rotate(-10deg);
+}

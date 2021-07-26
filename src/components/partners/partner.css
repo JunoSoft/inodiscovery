@@ -1,0 +1,4 @@
+.partnerItem:hover {
+  transition: 0.3s ease-in;
+box-shadow: 2px 2px 2px rgba(13, 14, 13, 0.5);
+}

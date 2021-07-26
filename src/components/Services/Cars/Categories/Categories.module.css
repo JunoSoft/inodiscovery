@@ -1,0 +1,10 @@
+.Categories {
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.Categories::-webkit-scrollbar {
+  display: none;
+}
