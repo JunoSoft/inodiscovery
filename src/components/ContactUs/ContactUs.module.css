@@ -3,10 +3,13 @@
   text-align: center;
   width: 100%;
 }
-.ContactUs h1{
+.ContactUs h1 {
   font-size: 1.7rem;
   text-transform: uppercase;
   padding-top: 50px;
+}
+.MemberBox {
+  margin-top: -90px;
 }
 .ContactBox {
   box-sizing: border-box;
@@ -76,23 +79,29 @@
 .InfoContact h3 {
   color: var(--clr-yellow1);
 }
-.InfoContact .SocialMedias{
+.InfoContact .SocialMedias {
   position: absolute;
   bottom: 100px;
   text-align: center;
- margin-left: 40px;
-
+  margin-left: 40px;
 }
-.InfoContact .SocialMedias i{
-  color:var(--clr-grey);
+.InfoContact .SocialMedias i {
+  color: var(--clr-grey);
   padding: 0 15px;
-  cursor:pointer
+  cursor: pointer;
 }
 .MessagingContact {
   width: 100%;
 }
 .MessagingContact h3 {
   color: var(--clr-green1);
+}
+.MembersGroup {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 70%;
+  margin: 0 auto;
 }
 @media (min-width: 500px) {
   .ContactBox {
@@ -105,7 +114,11 @@
     width: 80%;
     grid-template-columns: 1fr 40%;
   }
+  .MembersGroup {
+    grid-template-columns: 1fr;
+  }
 }
+
 @media (min-width: 1020px) {
   .ContactBox {
     width: 60%;

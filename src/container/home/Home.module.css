@@ -95,11 +95,12 @@
   margin-bottom: 30px;
 }
 .HorizontalAdvert {
+  box-sizing: border-box;
   height: 150px;
   width: 100%;
   text-align: center;
   padding: 20px;
-  display: block;
+  margin: 0 auto;
 }
 .HorizontalAdvert img {
   height: 100%;
@@ -167,7 +168,7 @@
 }
 @media (min-width: 950px) {
   .HorizontalAdvert {
-    display: none;
+    width: 62%;
   }
   .RightAdverts {
     display: block;
@@ -184,7 +185,7 @@
   }
 }
 @media (min-width: 1370px) {
-   .ContentBody {
+  .ContentBody {
     margin-top: 350px;
   }
 }

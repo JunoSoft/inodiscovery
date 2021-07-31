@@ -11,6 +11,7 @@
   grid-template-columns: 1fr;
 }
 .AdvertBtn {
+  box-sizing: border-box;
   padding: 15px 30px;
   text-align: center;
   font-size: 1.2rem;
@@ -24,9 +25,11 @@
 }
 .FooterWrap ul li {
   list-style: none;
+  box-sizing: border-box;
 }
 .FooterWrap > div {
   padding: 0 30px;
+  box-sizing: border-box;
 }
 .FooterWrap > div:first-child {
   border-right: solid 1px #999;
@@ -37,12 +40,14 @@
 }
 
 .SocialMedias ul {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   list-style: none;
   padding-left: 0;
 }
 .SocialMedias ul li {
+  box-sizing: border-box;
   padding-right: 0.8rem;
   text-align: left;
 }

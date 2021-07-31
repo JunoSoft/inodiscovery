@@ -170,6 +170,7 @@
   background-color: #fff;
   transition: all 0.7s;
   box-sizing: border-box;
+  margin-top:15px;
 }
 .HotelPresent .BookButton:hover,
 .BookButtonMini:hover {

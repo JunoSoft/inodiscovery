@@ -1,9 +1,9 @@
 import React from "react";
-import "./partner.css"
+import "./partner.css";
 
 const partner = (props) => (
   <div className="partnerItem">
-    <a href={props.pLink}>
+    <a href={props.pLink} target="_blank">
       <img src={props.image} alt="partner" />
     </a>
   </div>

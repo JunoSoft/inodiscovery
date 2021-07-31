@@ -6,8 +6,8 @@ class Scroll extends Component {
     return (
       <BackToTop
         showOnScrollUp
-        showAt={100}
-        speed={1500}
+        showAt={50}
+        speed={500}
         easing="easeInOutQuint"
       >
         <span style={{ color: "blue" }}>

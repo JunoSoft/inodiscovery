@@ -50,7 +50,7 @@ class Home extends Component {
         this.setState({
           hotels: res.data.slice(0, 10),
         });
-        this.sliderData(res.data.slice(0, 5));
+        this.sliderData(res.data.slice(0, 2));
       })
       .catch((error) => {
         this.setState({ isLoading: true });
@@ -80,7 +80,7 @@ class Home extends Component {
         this.setState({
           apartment: res.data.slice(0, 12),
         });
-        this.appartmentSLiderData(res.data.slice(0, 5));
+        this.appartmentSLiderData(res.data.slice(0, 2));
       })
       .catch((error) => {
         this.setState({ isLoading: true });
@@ -97,7 +97,7 @@ class Home extends Component {
         this.setState({
           cars: res.data.slice(0, 12),
         });
-        this.carSLiderData(res.data.slice(0, 5));
+        this.carSLiderData(res.data.slice(0, 1));
       })
       .catch((error) => {
         this.setState({ isLoading: true });
@@ -298,14 +298,14 @@ class Home extends Component {
         i++;
         if (i === 0 || i % 2 === 0) {
           return rightAdverts.push(
-            <a key={index} href={ads.Advert.link ? ads.link : "#"}>
+            <a target="_blank" key={index} href={ads.link ? ads.link : "#"}>
               <img alt="Ads" src={ads.Advert.url} width="100%" key={index} />
             </a>
           );
         }
         if (i % 2 !== 0) {
           return leftAdverts.push(
-            <a key={index} href={ads.Advert.link ? ads.Advert.link : "#"}>
+            <a target="_blank" key={index} href={ads.link ? ads.link : "#"}>
               <img alt="Ads" src={ads.Advert.url} width="100%" key={index} />
             </a>
           );
@@ -334,7 +334,7 @@ class Home extends Component {
     }
 
     let apartementDOM;
-    if (this.state.apartment === 0) {
+    if (this.state.apartment.length === 0) {
       apartementDOM = (
         <Empty message=" Oooops! There is no apartment added yet" />
       );
@@ -466,6 +466,7 @@ class Home extends Component {
             />
           ))
         : "";
+
     return (
       <Aux>
         {modalDisplay}
@@ -484,11 +485,20 @@ class Home extends Component {
           {this.state.isLoading && <Spinner />}
           <div className={classes.HorizontalAdvert}>
             {this.state.horizontalAdverts.length !== 0 &&
-            this.state.horizontalAdverts[0].Advert.url ? (
-              <img
-                alt="Advertisement"
-                src={this.state.horizontalAdverts[0].Advert.url}
-              />
+            this.state.horizontalAdverts[0].Advert.url !== undefined ? (
+              <a
+                target="_blank"
+                href={
+                  this.state.horizontalAdverts[0].link !== ""
+                    ? this.state.horizontalAdverts[0].link
+                    : "#"
+                }
+              >
+                <img
+                  alt="Advertisement"
+                  src={this.state.horizontalAdverts[0].Advert.url}
+                />
+              </a>
             ) : (
               ""
             )}
@@ -501,11 +511,20 @@ class Home extends Component {
           {this.state.isLoading && <Spinner />}
           <div className={classes.HorizontalAdvert}>
             {this.state.horizontalAdverts.length !== 0 &&
-            this.state.horizontalAdverts[1].Advert.url ? (
-              <img
-                alt="Advertisement"
-                src={this.state.horizontalAdverts[1].Advert.url}
-              />
+            this.state.horizontalAdverts[1] !== undefined ? (
+              <a
+                target="_blank"
+                href={
+                  this.state.horizontalAdverts[1].link !== undefined
+                    ? this.state.horizontalAdverts[1].link
+                    : "#"
+                }
+              >
+                <img
+                  alt="Advertisement"
+                  src={this.state.horizontalAdverts[1].Advert.url}
+                />
+              </a>
             ) : (
               ""
             )}
@@ -518,11 +537,20 @@ class Home extends Component {
           {this.state.isLoading && <Spinner />}
           <div className={classes.HorizontalAdvert}>
             {this.state.horizontalAdverts.length !== 0 &&
-            this.state.horizontalAdverts[2].Advert.url ? (
-              <img
-                alt="Advertisement"
-                src={this.state.horizontalAdverts[2].Advert.url}
-              />
+            this.state.horizontalAdverts[2] !== undefined ? (
+              <a
+                target="_blank"
+                href={
+                  this.state.horizontalAdverts[2].link !== ""
+                    ? this.state.horizontalAdverts[2].link
+                    : "#"
+                }
+              >
+                <img
+                  alt="Advertisement"
+                  src={this.state.horizontalAdverts[2].Advert.url}
+                />
+              </a>
             ) : (
               ""
             )}
@@ -535,11 +563,20 @@ class Home extends Component {
           {this.state.isLoading && <Spinner />}
           <div className={classes.HorizontalAdvert}>
             {this.state.horizontalAdverts.length !== 0 &&
-            this.state.horizontalAdverts[3].Advert.url ? (
-              <img
-                alt="Advertisement"
-                src={this.state.horizontalAdverts[3].Advert.url}
-              />
+            this.state.horizontalAdverts[3] !== undefined ? (
+              <a
+                target="_blank"
+                href={
+                  this.state.horizontalAdverts[3].link !== ""
+                    ? this.state.horizontalAdverts[3].link
+                    : "#"
+                }
+              >
+                <img
+                  alt="Advertisement"
+                  src={this.state.horizontalAdverts[3].Advert.url}
+                />
+              </a>
             ) : (
               ""
             )}
@@ -552,18 +589,27 @@ class Home extends Component {
           {this.state.isLoading && <Spinner />}
           <div className={classes.HorizontalAdvert}>
             {this.state.horizontalAdverts.length !== 0 &&
-            this.state.horizontalAdverts[4].Advert.url ? (
-              <img
-                alt="Advertisement"
-                src={this.state.horizontalAdverts[4].Advert.url}
-              />
+            this.state.horizontalAdverts[4] !== undefined ? (
+              <a
+                target="_blank"
+                href={
+                  this.state.horizontalAdverts[4].link !== ""
+                    ? this.state.horizontalAdverts[4].link
+                    : "#"
+                }
+              >
+                <img
+                  alt="Advertisement"
+                  src={this.state.horizontalAdverts[4].Advert.url}
+                />
+              </a>
             ) : (
               ""
             )}
           </div>
         </div>
         <div className={classes.PartnerWrapper}>
-          <h2 style={{ width: "100%" }}>PARTNERS</h2>
+          <h2 style={{ width: "100%" }}>Discover more with our Business Partners</h2>
           <br />
           {partners}
         </div>

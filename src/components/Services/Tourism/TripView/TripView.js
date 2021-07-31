@@ -67,7 +67,7 @@ class TripView extends Component {
     let tripDisplay = null;
     let tripData = null;
     let GarellyDisplay = null;
-    const images = [];
+    let images = [];
     let poster = null;
     if (this.state.isLoading) {
       tripDisplay = <Spinner />;

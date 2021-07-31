@@ -11,6 +11,7 @@ import { withRouter } from "react-router-dom";
 import Garelly from "react-grid-gallery";
 import Carousel from "re-carousel";
 import SpecialOffers from "./SpecialOffers";
+import EmptyMessage from "../../../UI/Empty/Empty";
 class HotelView extends Component {
   state = {
     hotels: null,
@@ -30,7 +31,6 @@ class HotelView extends Component {
         let hotelServiceFiltered = res.data.filter(
           (service) => service.hotel.id === id
         );
-
         this.setState({
           hotelServices: hotelServiceFiltered,
           isLoading: false,
@@ -38,7 +38,7 @@ class HotelView extends Component {
       })
       .catch((error) => {
         this.setState({ isLoading: false });
-        alert("There is no Services Yest Added for this Hotel!");
+        console.log(error.message);
       });
   };
   recommendedHotels = () => {
@@ -138,23 +138,11 @@ class HotelView extends Component {
     });
 
     /**........Hotel view Code.......... */
-    let hotelView = (
-      <p
-        style={{
-          margin: "auto",
-          width: "100%",
-          textAlign: "center",
-          marginTop: "80px",
-        }}
-      >
-        No Data found!
-      </p>
-    );
-    if (this.props.match.params.id) {
-      hotelView = <Spinner />;
-    }
+    let hotelView = <Spinner />;
+    let imageList;
+    let serviceSlider;
     if (this.state.hotelServices.length !== 0) {
-      let imageList = this.state.hotelServices.map((service, index) => (
+      imageList = this.state.hotelServices.map((service, index) => (
         <Aux key={index}>
           <div
             className={classes.Costs}
@@ -178,13 +166,15 @@ class HotelView extends Component {
         </Aux>
       ));
       //*********   ___________________************ */
-      let serviceSlider = (
+      serviceSlider = (
         <Carousel loop auto>
           {this.state.hotelServices.map((service, index) => (
             <div key={index}>
               <img src={service.Image.url} />
+
               <p>
-                {service.serviceName} _____ {service.serviceCost}
+                {service.serviceName} _____
+                {service.serviceCost}
               </p>
             </div>
           ))}
@@ -202,7 +192,8 @@ class HotelView extends Component {
           </Aux>
         );
       }
-
+    }
+    if (this.state.hotelData.length !== 0) {
       const IMAGES = this.state.imageGallery.map((galleryImage) => {
         return {
           src: galleryImage.url,
@@ -223,14 +214,20 @@ class HotelView extends Component {
           </h1>
           <div className={classes.HotelShow}>
             <div className={classes.HotelViews}>
-              <div className={classes.HotelSlider}>{serviceSlider}</div>
+              <div className={classes.HotelSlider}>
+                {this.state.hotelServices.length !== 0 ? (
+                  serviceSlider
+                ) : (
+                  <img src={this.state.hotelData.imageProfile.url} />
+                )}
+              </div>
               <div className={classes.HotelPhotosLine}>{imageList}</div>
               <div className={classes.HotelPresent}>
                 <div className={classes.SpecialOffers}>
                   <h3>Special Offers</h3>
                   <div className={classes.Offers}> {otherService}</div>
                 </div>
-                <div className={classes.MapShow}>{otherService}</div>
+            
                 {bookingButtonBigScreen}
               </div>
             </div>
@@ -250,21 +247,27 @@ class HotelView extends Component {
       );
     } else {
       hotelView = (
-        <p
-          style={{
-            margin: "auto",
-            width: "100%",
-            textAlign: "center",
-            marginTop: "80px",
-          }}
-        >
-          No Services Added yet for this hotel!
-        </p>
+        <div style={{ width: "300px", margin: "auto", marginTop: "140px" }}>
+          <EmptyMessage message="Services not yet added" />
+        </div>
       );
     }
+
     /**........______________.......... */
     /**this is hotels recommended list */
-    let hotelsList = "Loading...";
+    let hotelsList = (
+      <p
+        style={{
+          margin: "auto",
+          width: "100%",
+          textAlign: "center",
+          marginTop: "80px",
+          marginBottom: "100PX",
+        }}
+      >
+        <Spinner />
+      </p>
+    );
     if (this.state.hotels) {
       hotelsList = this.state.hotels.map((htl) => {
         const discount = (minPrice) => (minPrice * htl.discountPercent) / 100;
