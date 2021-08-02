@@ -1,0 +1,40 @@
+.SearchInput input {
+  width: 100%;
+  padding: 0.4rem 1rem;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+.Search {
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 7px;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 50%;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+}
+.categoriesCss {
+  position: fixed;
+  z-index: 100;
+  top: 8%;
+  left: 30%;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 2px 4px 5px 3px rgba(14, 14, 14, 0.198);
+}
+.SearchItemsResult {
+  width: 100%;
+  padding: 1rem;
+}
+.EmptyData {
+  padding: 1rem;
+}
+@media (min-width: 499px) {
+  .Search {
+    display: none;
+  }
+}

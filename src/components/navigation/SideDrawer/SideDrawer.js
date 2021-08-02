@@ -60,7 +60,7 @@ class SideDrawer extends Component {
             link="/contact"
             close={this.props.close}
           >
-Contact us
+            Contact us
           </DrawerNav>
           <DrawerNav
             icon="fa fa-book"

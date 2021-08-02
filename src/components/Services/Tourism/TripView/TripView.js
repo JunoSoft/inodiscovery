@@ -128,15 +128,15 @@ class TripView extends Component {
         <div className={classes.TripTopBg}></div>
         <div className={classes.TripView}>
           <div className={classes.TripSlider}>
-            <img src={poster} />
+            <img src={poster} alt="img"/>
           </div>
           <div className={classes.garellyLine}>{GarellyDisplay}</div>
           <div className={classes.TripDetails}>{tripData}</div>
         </div>
         <div className={classes.garellyLineDesktop}>{GarellyDisplay}</div>
 
-        <div className={classes.Trips}>
           <h1 className={classes.H1}>MORE PLACE TO TRAVEL</h1>
+        <div className={classes.Trips}>
           {tripDisplay}
         </div>
         <Footer />

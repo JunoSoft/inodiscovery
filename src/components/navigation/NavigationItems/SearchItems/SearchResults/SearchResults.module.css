@@ -1,0 +1,26 @@
+.SearchResultContainer {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: 20% 80%;
+  padding: 0.5rem 0;
+}
+.SearchResultContainerSmall {
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: 20% 80%;
+  padding: 0.5rem 0;
+}
+.SearchResultContainer:hover {
+  cursor: pointer;
+  color: #1c4c88;
+}
+.SearchResultImage {
+  width: 100%;
+}
+.SearchResultImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

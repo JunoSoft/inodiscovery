@@ -91,7 +91,6 @@ class FormContact extends Component {
     loading: false,
   };
 
-
   checkValidity(value, rules) {
     let isValid = true;
     if (!rules) {
@@ -162,7 +161,7 @@ class FormContact extends Component {
           />
         ))}
         <Button btnType="submit" disabled={!this.state.formIsValid}>
-          Send Message
+          Send
         </Button>
       </form>
     );
@@ -170,7 +169,6 @@ class FormContact extends Component {
       form = <Spinner />;
     }
     return <React.Fragment>{form}</React.Fragment>;
-
   }
 }
 export default withRouter(FormContact);

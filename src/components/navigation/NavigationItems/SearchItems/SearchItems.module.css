@@ -1,0 +1,7 @@
+.SearchNavItem {
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+.SearchNavItem:hover {
+  color: #eca400;
+}

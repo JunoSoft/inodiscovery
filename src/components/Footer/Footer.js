@@ -54,7 +54,7 @@ const Footer = (props) => {
           </a>
         </div>
       </div>
-      <div>
+      <div style={{textAlign:"center"}}>
         <h3>
           <font color="#eca400">Address</font>{" "}
         </h3>
@@ -68,11 +68,11 @@ const Footer = (props) => {
         </ul>
         Kigali,Kicukiro
         <br /><br/>
-        <div>
+        <div >
           Website Designed and Built by{" "}
           <font color="#eca400">Junosoft LTD</font>
         </div>
-        <div>
+        <div >
           <br />
           &copy; Copyright By <span>INO</span> Discovery
         </div>

@@ -52,3 +52,24 @@
   content: "\f002";
   font-family: "FontAwesome";
 }
+.SearchNavigations {
+  background-color: #fff;
+  color: black;
+  padding: 1rem;
+  position: absolute;
+  top: 70px;
+  left: 400px;
+}
+.SearchResult {
+  display: block;
+  box-shadow: 1px 2px 5px 4px rgba(0, 0, 0, 0.198);
+  background-color: #fff;
+  color: black;
+  padding: 1rem;
+  position: absolute;
+  top: 70px;
+  left: 400px;
+}
+.SearchNull {
+  display: none;
+}

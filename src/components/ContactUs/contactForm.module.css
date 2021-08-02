@@ -9,6 +9,9 @@
   padding: 10px;
   box-sizing: border-box;
 }
+.ContactData button {
+  border-radius: 10px;
+}
 .ContactUsHeader {
   display: flex;
   width: 50%;
@@ -26,5 +29,8 @@
 @media (min-width: 600px) {
   .ContactData {
     width: 500px;
+  }
+  .ContactData button {
+    border-radius: 30px;
   }
 }
