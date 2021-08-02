@@ -63,7 +63,7 @@ class contact extends Component {
           <h3>Meat with the Founder</h3>
           <div className={classes.MembersGroup}>
             <Member
-              image="https://pbs.twimg.com/profile_images/1234377576371687425/BYAleSXi_400x400.jpg"
+              image="http://4.bp.blogspot.com/-skQrkRpiwbs/YQWXK6X97nI/AAAAAAAABE8/5jLexYgkcwwX7Bf38mvHYi_HQ7jpc78pQCK4BGAYYCw/s220/Yves%2BI.jpg"
               name="Yves Thierry Usengumuremyi"
               position="Managing Director | Ino Discovery | Marketing Department"
               phone="+250 788 926 536"

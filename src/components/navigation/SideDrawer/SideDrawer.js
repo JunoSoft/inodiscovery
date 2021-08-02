@@ -55,13 +55,21 @@ class SideDrawer extends Component {
           >
             Events
           </DrawerNav>
-          {/* <DrawerNav
-            icon="fa fa-language"
-            link="/login"
+          <DrawerNav
+            icon="fa fa-phone"
+            link="/contact"
             close={this.props.close}
           >
-            Login
-          </DrawerNav> */}
+Contact us
+          </DrawerNav>
+          <DrawerNav
+            icon="fa fa-book"
+            link="/about"
+            close={this.props.close}
+          >
+            About us
+          </DrawerNav>
+
         </div>
       </Aux>
     );

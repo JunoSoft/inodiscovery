@@ -3,7 +3,7 @@
 .FooterWrap {
   box-sizing: border-box;
   margin: 0;
-  padding: 48px;
+  padding: 48px 10px;
   background-color: var(--clr-blue2);
   color: #efefef;
   width: 100%;
@@ -32,7 +32,7 @@
   box-sizing: border-box;
 }
 .FooterWrap > div:first-child {
-  border-right: solid 1px #999;
+  border-right: none;
 }
 .FooterWrap span {
   color: #eca400;
@@ -42,6 +42,7 @@
 .SocialMedias ul {
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   list-style: none;
   padding-left: 0;
@@ -51,8 +52,13 @@
   padding-right: 0.8rem;
   text-align: left;
 }
+
 @media (min-width: 750px) {
   .FooterWrap {
     grid-template-columns: 1fr 1fr;
+    padding: 48px;
+  }
+  .FooterWrap > div:first-child {
+    border-right: solid 1px #999;
   }
 }

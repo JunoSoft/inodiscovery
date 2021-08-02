@@ -67,7 +67,11 @@ const Footer = (props) => {
           <li>Phone: +250 788 926 536</li>
         </ul>
         Kigali,Kicukiro
-        <div>Website Designed and Built by Junosoft LTD</div>
+        <br /><br/>
+        <div>
+          Website Designed and Built by{" "}
+          <font color="#eca400">Junosoft LTD</font>
+        </div>
         <div>
           <br />
           &copy; Copyright By <span>INO</span> Discovery

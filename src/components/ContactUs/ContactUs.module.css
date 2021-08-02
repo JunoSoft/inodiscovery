@@ -80,10 +80,10 @@
   color: var(--clr-yellow1);
 }
 .InfoContact .SocialMedias {
-  position: absolute;
-  bottom: 100px;
+  position: relative;
+  bottom: 5px;
   text-align: center;
-  margin-left: 40px;
+  margin-left: -40px;
 }
 .InfoContact .SocialMedias i {
   color: var(--clr-grey);
@@ -102,6 +102,7 @@
   grid-template-columns: 1fr;
   width: 70%;
   margin: 0 auto;
+  justify-content: center;
 }
 @media (min-width: 500px) {
   .ContactBox {
@@ -116,6 +117,7 @@
   }
   .MembersGroup {
     grid-template-columns: 1fr;
+    
   }
 }
 
